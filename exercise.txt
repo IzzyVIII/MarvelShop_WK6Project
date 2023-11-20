@@ -1,0 +1,45 @@
+Throughout this week we have been learning how to create a project with flask. More specifically, we have been learning how to create a RESTful Web API that would expose our data from a database to authenticated users.
+
+With this project, you will explore more of that concept! This time though, through the eyes of a MARVEL comic fan!
+
+The project requires that each individual complete their own code/project, however, you will be placed inside of a think tank group to bounce ideas off of other cohort-mates.
+
+Your Task:
+Create a full featured CRUD RESTful Web API of some sort of cool shop, cooler than the shops we've already done. Or if you have other ideas thats cool too. Just make sure you're hitting the CRUD requirements.
+
+Requirements:
+Create Login functionality for users - Email/Password
+Database should be created with PostgreSQL
+Virtual environment for projects
+
+At least 2 models that have a relationship, though it would be great to do more. 
+Full CRUD operations so that a user can create, read, update, and delete data.
+A cool front end to interact with. 
+
+EXTRA CREDIT: You can of course use the API (Google Image Search) we did in class as an example. Now is also a really good time to start experimenting with flask if you're interested in using it for your final. This is also an amazing time to start experimenting with making API calls and bringing back data from those API calls that you can store in your database. 
+
+
+
+Packages for project should include (prefaced by pip install)
+Flask
+Flask-Login
+flask-marshmallow
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-WTF
+psycopg2 OR psycopg2-binary
+python-dotenv
+email-validator
+Gunicorn (Deployment)
+
+HINT: Remember to take from your existing requirements.txt to get moving a little quicker!
+
+When Completed:
+Once you have created the necessary parts of the project (listed above) and have verified that data can be returned from your API for a given user, commit your code to github and submit the github link.
+
+
+https://getbootstrap.com/docs/5.0
+
+"product_id": "9093739e-607c-4d52-9996-4b3c7ff3be4f"
+"cust_id": "2a3c490a-2456-46af-904b-a38e37109f70"
+"order": "ff99b5bc-e568-4901-94c4-9092c66e5c65"

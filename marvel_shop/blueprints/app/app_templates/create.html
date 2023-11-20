@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="row mt-5 mb-5 p-5 shadow rounded border border-primary w-75">
+        <div class="col">
+            <h3>{% if is_update %} 
+                    Update your product
+                {% else %}
+                Create a New Product for your Shop!
+                {% endif %}
+            </h3>
+            <form action="" method='POST' class="row g-3">
+                {{ form.hidden_tag() }}
+                <div class="col-12">
+                    {{ form.name.label }}
+                    {{ form.name(class='form-control mt-2', placeholder='Carnivorous Plant') }}
+                    {% for error in form.name.errors %}
+                        <span class="err-msg">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{ form.image.label }}
+                    {{ form.image(class='form-control mt-2') }}
+                </div>
+                <div class="col-12">
+                    {{ form.category.label }}
+                    {{ form.description(class='form-control mt-2', placeholder='Action Figure') }}
+                </div>
+                <div class="col-12">
+                    {{ form.description.label }}
+                    {{ form.description(class='form-control mt-2', placeholder='18" model') }}
+                </div>
+                <div class="col-12">
+                    {{ form.price.label }}
+                    {{ form.price(class='form-control mt-2', placeholder='$15.99') }}
+                    {% for error in form.price.errors %}
+                        <span class="err-msg">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{ form.quantity.label }}
+                    {{ form.quantity(class='form-control mt-2', placeholder='100') }}
+                    {% for error in form.quantity.errors %}
+                        <span class="err-msg">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{ form.submit(class='btn btn-primary') }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
